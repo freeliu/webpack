@@ -11,6 +11,7 @@ export default new Router({
     {path: '/index', component: (resolve) => require(['../pages/index.vue'], resolve)},
     {path: '/page1', component: (resolve) => require(['../pages/page1.vue'], resolve)},
     {path: '/page2', component: (resolve) => require(['../pages/page2.vue'], resolve)},
+    {path: '/layout', component: (resolve) => require(['../pages/layout.vue'], resolve)},
     {path: '*', redirect: '/index'}
   ]
 })

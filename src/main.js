@@ -1,15 +1,17 @@
-import 'weui'
 import 'assets/css/main.scss'
+import elementUI from 'element-ui'
+
 
 // import './assets/js/polyfill.js'
-import weUi from 'weui.js';
+
 import Vue from 'vue'
 import router from './router'
 import common from './assets/js/common.js'
 
 //封装公共数据和方法
 window.common = common;
-window.weUi = weUi;
+
+Vue.use(elementUI);
 
 /* eslint-disable no-new */
 let vm = new Vue({

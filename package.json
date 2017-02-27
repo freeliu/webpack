@@ -12,10 +12,10 @@
     "test": "npm run unit && npm run e2e"
   },
   "dependencies": {
+    "element-ui": "^1.2.1",
     "normalize.css": "^5.0.0",
     "vue": "^2.1.10",
     "vue-router": "^2.2.0",
-    "weui.js": "^1.1.0",
     "whatwg-fetch": "^2.0.2"
   },
   "devDependencies": {
