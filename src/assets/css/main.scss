@@ -1,10 +1,8 @@
-@import "base";
-
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color:$color-red ;
-  margin-top: 60px;
+.page {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  //overflow: hidden;
+  //解决iphone滚动不流畅问题
+  -webkit-overflow-scrolling: touch;
 }
