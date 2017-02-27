@@ -1,5 +1,6 @@
 import 'weui'
-import './assets/css/main.scss'
+import 'assets/css/main.scss'
+
 // import './assets/js/polyfill.js'
 import weUi from 'weui.js';
 import Vue from 'vue'
@@ -8,7 +9,7 @@ import common from './assets/js/common.js'
 
 //封装公共数据和方法
 window.common = common;
-window.weUi=weUi;
+window.weUi = weUi;
 
 /* eslint-disable no-new */
 let vm = new Vue({
