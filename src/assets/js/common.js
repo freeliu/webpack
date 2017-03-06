@@ -5,6 +5,7 @@
 
 //判断是否是本地环境
 let isLocal = /127.0.0.1|localhost|192.168/.test(location.host);
+let isTest = /test-/.test(location.host);
 let broswer = {
   isWeChat: navigator.userAgent.toLowerCase().match(/MicroMessenger/i) == "micromessenger"
 }
@@ -32,7 +33,7 @@ let api = {
     loginFailArr: [
       -1001,//未登录或登录已失效
       -17,//微信接口错误，如直接打开分享过来的带code的链接
-      -108//未知，其它项目遇到错误
+      -108,//未知，其它项目遇到错误
     ]
   },
   login: apiDomain + "/api/login"
@@ -114,11 +115,11 @@ function getJson(url, data, callback) {
 };
 export default {
   isLocal,
+  isTest,
   imgDomain,
   getUrlParam,
   getWeChatAuthUrl,
   api,
   postJson,
   getJson
-
 }
