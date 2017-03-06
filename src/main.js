@@ -6,10 +6,18 @@ import weUi from 'weui.js';
 import Vue from 'vue'
 import router from './router'
 import common from './assets/js/common.js'
+import globalFilters from './assets/js/global-filters'
 
 //封装公共数据和方法
 window.common = common;
 window.weUi = weUi;
+
+
+//注册全局过滤器
+for (let key in globalFilters) {
+  Vue.filter(key, globalFilters[key]);
+}
+
 
 /* eslint-disable no-new */
 let vm = new Vue({
