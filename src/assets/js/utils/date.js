@@ -59,8 +59,18 @@ function toYYMMddHHMMss (date) {
   return `${yyyy}-${MM}-${dd} ${hh}:${mm}:${ss}`
 }
 
+/**
+ *日期转 yyyyMMdd 格式 eg:20170315
+ * @param {String|Date|Number}date
+ * @returns {string}
+ */
+function toYYMMddOnlyNumber(date) {
+  return toYYMMdd (date).replace(/-/g,'')
+}
+
 export  default {
   addDate,
   toYYMMdd,
-  toYYMMddHHMMss
+  toYYMMddHHMMss,
+  toYYMMddOnlyNumber
 }
